@@ -12,11 +12,14 @@
     <title>Register</title>
   </head>
   <body>
-    <div class="vh-100 row align-items-center justify-content-center bg-dark">
+    <div
+      class="vh-100 d-flex align-items-center justify-content-center bg-dark"
+    >
       <form
         target="_self"
         action="./index.html"
-        class="w-25 bg-light p-4 rounded"
+        class="bg-light p-4 rounded overflow-hidden"
+        style="width: 35%"
       >
         <div class="mb-3">
           <label for="login-email" class="form-label">Email*</label>
@@ -58,7 +61,12 @@
             <option value="female">Female</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-primary">Register</button>
+        <button
+          type="submit"
+          class="btn btn-primary d-block m-auto mt-2 mb-2 w-75 fw-bold overflow-hidden"
+        >
+          Register
+        </button>
       </form>
     </div>
     <script
