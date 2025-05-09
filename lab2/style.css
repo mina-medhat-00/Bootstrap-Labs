@@ -18,3 +18,8 @@ body {
   outline: none;
   box-shadow: none;
 }
+
+.footer-links:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
