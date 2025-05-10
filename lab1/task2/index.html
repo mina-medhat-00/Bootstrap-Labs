@@ -22,11 +22,15 @@
         style="width: 35%"
       >
         <div class="mb-3">
-          <label for="loginEmail" class="form-label">Email*</label>
+          <label for="loginEmail" class="form-label"
+            >Email<span class="text-danger">*</span></label
+          >
           <input type="email" class="form-control" id="loginEmail" required />
         </div>
         <div class="mb-3">
-          <label for="loginPassword" class="form-label">Password*</label>
+          <label for="loginPassword" class="form-label"
+            >Password<span class="text-danger">*</span></label
+          >
           <input
             type="password"
             class="form-control"
@@ -40,13 +44,13 @@
         </div>
         <button
           type="submit"
-          class="btn btn-primary d-block m-auto mt-2 mb-2 w-75 fw-bold overflow-hidden"
+          class="btn btn-primary d-block m-auto mt-2 mb-2 w-75 fw-bold"
         >
           Login
         </button>
         <button
           type="button"
-          class="btn btn-primary d-block m-auto mt-2 mb-2 w-75 fw-bold overflow-hidden"
+          class="btn btn-primary d-block m-auto mt-2 mb-2 w-75 fw-bold"
           onclick="window.location.href='./register.html'"
         >
           Register

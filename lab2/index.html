@@ -16,15 +16,10 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Learning Platform</title>
   </head>
-  <body
-    style="
-      font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif,
-        Apple Color Emoji, Segoe UI Emoji;
-    "
-    class="bg-dark text-light"
-  >
+  <body class="bg-dark text-light">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -61,21 +56,24 @@
     </nav>
     <main>
       <!-- Hero -->
-      <section class="text-center p-4">
-        <h1>Start Learning Today</h1>
-        <p>
-          E-Learning is an all-in-one digital learning platform designed to
-          empower students, professionals, and lifelong learners with
-          personalized, flexible, and engaging education. Whether you're
-          exploring new skills, preparing for exams, or advancing your career,
-          LearnSphere offers a diverse library of expert-led courses and
-          interactive lessons.
-        </p>
-        <button class="btn btn-primary">Browse Courses</button>
+      <section class="text-center p-4 bg-primary">
+        <div class="container">
+          <h1>Start Learning Today</h1>
+          <p>
+            E-Learning is an all-in-one digital learning platform designed to
+            empower students, professionals, and lifelong learners with
+            personalized, flexible, and engaging education. Whether you're
+            exploring new skills, preparing for exams, or advancing your career,
+            LearnSphere offers a diverse library of expert-led courses and
+            interactive lessons.
+          </p>
+          <button class="btn btn-secondary fw-bold">Browse Courses</button>
+        </div>
       </section>
       <!-- Course Categories -->
       <section class="my-3">
         <div class="container">
+          <h3>Specializations</h3>
           <div class="row">
             <div class="col-lg my-2">
               <div class="card">
@@ -135,108 +133,307 @@
         </div>
       </section>
       <!-- Featured Courses -->
-      <section></section>
-      <!-- Student Feedbacks -->
-      <section class="container">
-        <h3 class="my-4">Feedbacks</h3>
-        <div class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="..." alt="StudentFeedback" class="d-block w-100" />
+      <section class="my-3">
+        <div class="container">
+          <h3 class="my-4">Featured Courses</h3>
+          <div class="row">
+            <div class="col-md-4 col-12 my-3">
+              <div class="card">
+                <img
+                  src="./images/course.png"
+                  class="card-img-top"
+                  alt="course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr. Emily Chen</h5>
+                  <p class="card-text">
+                    Data Science with Python: From Basics to Advanced
+                  </p>
+                  <a href="#" class="btn btn-primary d-block fw-bold">Enroll</a>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="..." alt="StudentFeedback" class="d-block w-100" />
+            <div class="col-md-4 col-12 my-3">
+              <div class="card">
+                <img
+                  src="./images/course.png"
+                  class="card-img-top"
+                  alt="course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Mark Rivera</h5>
+                  <p class="card-text">
+                    Digital Marketing Masterclass: SEO, Social Media & Ads
+                  </p>
+                  <a href="#" class="btn btn-primary d-block fw-bold">Enroll</a>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="..." alt="StudentFeedback" class="d-block w-100" />
+            <div class="col-md-4 col-12 my-3">
+              <div class="card">
+                <img
+                  src="./images/course.png"
+                  class="card-img-top"
+                  alt="course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sara Kapoor</h5>
+                  <p class="card-text">UX/UI Design Fundamentals with Figma</p>
+                  <a href="#" class="btn btn-primary d-block fw-bold">Enroll</a>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="..." alt="StudentFeedback" class="d-block w-100" />
+            <div class="col-md-4 col-12 my-3">
+              <div class="card">
+                <img
+                  src="./images/course.png"
+                  class="card-img-top"
+                  alt="course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">James Donovan</h5>
+                  <p class="card-text">
+                    Full-Stack Web Development with React and Node.js
+                  </p>
+                  <a href="#" class="btn btn-primary d-block fw-bold">Enroll</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 my-3">
+              <div class="card">
+                <img
+                  src="./images/course.png"
+                  class="card-img-top"
+                  alt="course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Prof. Linda Moreau</h5>
+                  <p class="card-text">Introduction to Psychology</p>
+                  <a
+                    href="#"
+                    class="btn btn-primary d-block fw-bold d-block fw-bold"
+                    >Enroll</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 my-3">
+              <div class="card">
+                <img
+                  src="./images/course.png"
+                  class="card-img-top"
+                  alt="course"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ankit Sharma</h5>
+                  <p class="card-text">
+                    Machine Learning & AI Concepts with Real Projects
+                  </p>
+                  <a href="#" class="btn btn-primary d-block fw-bold">Enroll</a>
+                </div>
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        </div>
+      </section>
+      <!-- Student Feedbacks -->
+      <section class="my-3">
+        <div class="container">
+          <h3 class="my-4">Feedbacks</h3>
+          <div id="feedbacks" class="carousel slide w-75 m-auto">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <img
+                    src="./images/feedback1.png"
+                    class="w-25 rounded-circle"
+                    alt="studentFeedback"
+                  />
+                  <h5>John M. - Marketing Professional</h5>
+                  <p class="text-center">
+                    "This platform completely changed the way I learn. The
+                    courses are well-structured, and I could study at my own
+                    pace while working full-time. I especially loved the
+                    hands-on projects—they helped me apply what I learned
+                    immediately."
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <img
+                    src="./images/feedback2.png"
+                    class="w-25 rounded-circle"
+                    alt="studentFeedback"
+                  />
+                  <h5>James T. - Computer Science Student</h5>
+                  <p class="text-center">
+                    "The instructors are top-notch and explain complex topics in
+                    a really clear way. I took a few programming courses and
+                    landed an internship thanks to the skills I gained. Highly
+                    recommend it to any student wanting to upskill!"
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <img
+                    src="./images/feedback3.png"
+                    class="w-25 rounded-circle"
+                    alt="studentFeedback"
+                  />
+                  <h5>Ayesha R. - Career Switcher to UX Design</h5>
+                  <p class="text-center">
+                    "I was nervous about switching careers, but the design
+                    courses here gave me the confidence and knowledge I needed.
+                    The community support and feedback from mentors were also a
+                    huge bonus."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#feedbacks"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#feedbacks"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </section>
       <!-- FAQ -->
-      <section class="container">
-        <h3 class="my-4">FAQ</h3>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
+      <section class="my-3">
+        <div class="container">
+          <h3 class="my-4">FAQ</h3>
+          <div class="accordion" id="FAQ">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#questionOne"
+                  aria-expanded="false"
+                  aria-controls="questionOne"
+                >
+                  Do I receive a certificate after completing a course?
+                </button>
+              </h2>
+              <div
+                id="questionOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#FAQ"
               >
-                Accordion Item #1
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">test</div>
+                <div class="accordion-body">
+                  Yes, upon successfully completing a course, you'll receive a
+                  shareable certificate that you can add to your resume,
+                  LinkedIn profile, or portfolio.
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#questionTwo"
+                  aria-expanded="false"
+                  aria-controls="questionTwo"
+                >
+                  What types of courses are available on this platform?
+                </button>
+              </h2>
+              <div
+                id="questionTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#FAQ"
               >
-                Accordion Item #2
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">test</div>
+                <div class="accordion-body">
+                  We offer a wide range of courses across various fields,
+                  including technology, business, design, health, and personal
+                  development. Each course is created and taught by industry
+                  experts and experienced educators.
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#questionThree"
+                  aria-expanded="false"
+                  aria-controls="questionThree"
+                >
+                  How do I enroll in a course?
+                </button>
+              </h2>
+              <div
+                id="questionThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#FAQ"
               >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">test</div>
+                <div class="accordion-body">
+                  Simply create a free account, browse our course catalog, and
+                  click “Enroll” on the course you're interested in. Some
+                  courses may be free, while others require payment or a
+                  subscription.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#questionFour"
+                  aria-expanded="false"
+                  aria-controls="questionFour"
+                >
+                  Can I learn at my own pace?
+                </button>
+              </h2>
+              <div
+                id="questionFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#FAQ"
+              >
+                <div class="accordion-body">
+                  Yes! Most of our courses are self-paced, allowing you to learn
+                  whenever and wherever it suits you. You can pause, rewind, and
+                  revisit lessons as often as you like.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,9 +442,37 @@
     <footer class="py-4 py-md-5 mt-5 border-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg"></div>
-          <div class="col-lg"></div>
-          <div class="col-lg"></div>
+          <div class="col-4 col-lg">
+            <h4>Links</h4>
+            <ul class="list-unstyled fs-5">
+              <li class="footer-links">Home</li>
+              <li class="footer-links">About</li>
+              <li class="footer-links">Featured</li>
+              <li class="footer-links">Support</li>
+              <li class="footer-links">Degrees</li>
+              <li class="footer-links">Campus</li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg">
+            <h4>Contact Us</h4>
+            <ul class="list-unstyled fs-5">
+              <li>Email: support@elearn.com</li>
+              <li>Phone: +1 (800) 123-4567</li>
+              <li>Hours: Monday-Friday, 9 AM-5 PM (EST)</li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg">
+            <h4>About</h4>
+            <p>
+              With expert-led courses across technology, business, design, and
+              personal development, we combine engaging content, real-world
+              projects, and flexible learning paths to help our users grow
+              confidently in a rapidly changing world. Whether you're a student,
+              a professional, or a lifelong learner, we're here to support your
+              journey with the tools, community, and knowledge you need to
+              succeed.
+            </p>
+          </div>
         </div>
         <div>&copy; 2025 E-Learning Inc. All rights reserved.</div>
       </div>
